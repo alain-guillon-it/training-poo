@@ -30,6 +30,7 @@
   --info-2: #033e57;
   --light: #f9f4e9;
   --muted: #c9bd9e;
+  --black: #313131;
 
   /* BACKGOUND-COLORS */
   --bg-primary: var(--primary);
@@ -41,6 +42,7 @@
   --bg-info: var(--info);
   --bg-light: var(--light);
   --bg-muted: var(--muted);
+  --bg-black: var(--black);
 
   /* LINK-COLORS */
   --link: var(--primary);
@@ -55,6 +57,7 @@
   --text-info: var(--info-2);
   --text-light: var(--light);
   --text-muted: var(--muted);
+  --text-black: var(--black);
 }
 
 /**
@@ -92,7 +95,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 54px 1fr 1fr;
+  grid-template-rows: 54px 1fr 500px;
   grid-template-areas:
     "headerContainer"
     "mainContainer"

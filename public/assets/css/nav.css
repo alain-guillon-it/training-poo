@@ -16,7 +16,7 @@
  */
 header {
   grid-area: headerContainer;
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-black);
   display: flex;
   align-items: center;
   justify-content: space-between;
