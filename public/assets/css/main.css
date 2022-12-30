@@ -24,7 +24,7 @@ main {
  * MAIN ARTICLE ERROR
  * ========================================================================================
  */
-article.error {
+main article.error {
   height: 100%;
   background-color: var(--bg-danger);
   color: var(--text-danger);
@@ -33,13 +33,22 @@ article.error {
   align-items: center;
   justify-content: center;
 }
-article.error h1 {
-  font-size: 69px;
+main article.error h1 {
+  font-size: calc(69px + 1vmin);
   margin-bottom: 25px;
 }
-article.error p {
+main article.error p {
   text-align: center;
   max-width: 400px;
   font-size: calc(16px + 1vmin);
   letter-spacing: 1.6px;
+}
+
+/**
+ * ========================================================================================
+ * MAIN ARTICLE HOME
+ * ========================================================================================
+ */
+main article {
+  padding: 50px;
 }
