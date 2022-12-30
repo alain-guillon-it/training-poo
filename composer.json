@@ -1,0 +1,17 @@
+{
+    "name": "zyrass/training-poo",
+    "description": "Entraînement sur les concepts de la programmation orienté objet",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Zyrass\\TrainingPoo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alain Guillon",
+            "email": "a.guillon@it-students.fr"
+        }
+    ],
+    "require": {}
+}
