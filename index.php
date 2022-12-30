@@ -82,6 +82,6 @@ if ($_action == null) {
   include_once __DIR__ . "/public/partials/_footer.php";
 }
 
-echo "<pre>";
-var_dump($_controller, $_action, $_id, $pageController, $page);
-echo "</pre>";
+// echo "<pre>";
+// var_dump($_controller, $_action, $_id, $pageController, $page);
+// echo "</pre>";

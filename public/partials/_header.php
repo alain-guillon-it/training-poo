@@ -7,7 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>test home</title>
   <!-- INCLUDE BASE CSS -->
-  <link rel="stylesheet" href=<?= __DIR__ . "/public/assets/css/base.css"; ?>>
+  <link rel="stylesheet" href="../../public/assets/css/base.css">
+  <!-- INCLUDE HEADER CSS -->
+  <link rel="stylesheet" href="../../public/assets/css/nav.css">
+  <!-- INCLUDE MAIN CSS -->
+  <link rel="stylesheet" href="../../public/assets/css/main.css">
+  <!-- INCLUDE FOOTER CSS -->
+  <link rel="stylesheet" href="../../public/assets/css/footer.css">
 </head>
 
 <body>

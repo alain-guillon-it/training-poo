@@ -1,0 +1,101 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Author : Alain Guillon
+ * Students Github : https://github.com/alain-guillon-it
+ * Personal Github : https://github.com/Zyrass
+ * Date : 30/12/2022
+ * Version : Alpha 0.0.1
+ * Licence : MIT
+ * ----------------------------------------------------------------------------------------
+ **/
+
+/**
+ * ========================================================================================
+ * VARIABLES
+ * ========================================================================================
+ */
+:root {
+  /* COLORS */
+  --primary: #ffb7ff; /* Lien cliquable */
+  --primary-2: #ff7fff;
+  --secondary: #17032d;
+  --secondary-2: #ba82f7;
+  --success: #33d9b2;
+  --success-2: #0b3a2f;
+  --danger: #ff9292;
+  --danger-2: #560000;
+  --warning: #ffdc7f;
+  --warning-2: #5b4200;
+  --info: #80d6fb;
+  --info-2: #033e57;
+  --light: #f9f4e9;
+  --muted: #c9bd9e;
+
+  /* BACKGOUND-COLORS */
+  --bg-primary: var(--primary);
+  --bg-secondary: var(--secondary);
+  --bg-secondary-2: var(--secondary-2);
+  --bg-success: var(--success);
+  --bg-danger: var(--danger);
+  --bg-warning: var(--warning);
+  --bg-info: var(--info);
+  --bg-light: var(--light);
+  --bg-muted: var(--muted);
+
+  /* LINK-COLORS */
+  --link: var(--primary);
+  --visited: var(--primary-2);
+
+  /* TEXT-COLORS */
+  --text-primary: var(--primary);
+  --text-secondary: var(--secondary);
+  --text-success: var(--success-2);
+  --text-danger: var(--danger-2);
+  --text-warning: var(--warning-2);
+  --text-info: var(--info-2);
+  --text-light: var(--light);
+  --text-muted: var(--muted);
+}
+
+/**
+ * ========================================================================================
+ * HTML
+ * ========================================================================================
+ */
+html {
+  scroll-behavior: smooth;
+}
+
+/**
+ * ========================================================================================
+ * RESET
+ * ========================================================================================
+ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/**
+ * ========================================================================================
+ * BODY
+ * ========================================================================================
+ */
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 54px 1fr 400px;
+  grid-template-areas:
+    "headerContainer"
+    "mainContainer"
+    "footerContainer";
+  overflow-x: hidden;
+}

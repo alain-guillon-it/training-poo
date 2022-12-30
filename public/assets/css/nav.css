@@ -1,0 +1,24 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Author : Alain Guillon
+ * Students Github : https://github.com/alain-guillon-it
+ * Personal Github : https://github.com/Zyrass
+ * Date : 30/12/2022
+ * Version : Alpha 0.0.1
+ * Licence : MIT
+ * ----------------------------------------------------------------------------------------
+ **/
+
+/**
+ * ========================================================================================
+ * HEADER
+ * ========================================================================================
+ */
+header {
+  grid-area: headerContainer;
+  background-color: var(--bg-muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 100vw;
+}
