@@ -76,11 +76,15 @@ $page = new $pageController;
  * SHOW THE VIEW IF DOES'NT ACTION EXIST
  * ========================================================================
  */
+include_once __DIR__ . "/public/partials/_header.php";
+
 if ($_action == null) {
-  include_once __DIR__ . "/public/partials/_header.php";
   include_once __DIR__ . "/public/views/" . strtolower($_controller) . "/" . strtolower($_controller) . ".view.php";
-  include_once __DIR__ . "/public/partials/_footer.php";
+} else {
+  include_once __DIR__ . "/public/views/" . strtolower($_controller) . "/" . strtolower($_action) . ".view.php";
 }
+
+include_once __DIR__ . "/public/partials/_footer.php";
 
 // echo "<pre>";
 // var_dump($_controller, $_action, $_id, $pageController, $page);
