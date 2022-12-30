@@ -69,11 +69,11 @@ if (isset($_GET["id"]) && !empty($_GET["id"])) {
  * ========================================================================
  */
 
-$pageController = "Zyrass\\TrainingPoo\\" . ucfirst($_controller) . "Controller";
+$pageController = "Zyrass\\TrainingPoo\\controllers\\" . ucfirst($_controller) . "Controller";
 $page = new $pageController;
 
 
 
 echo "<pre>";
-var_dump($_controller, $_action, $_id, $pageController);
+var_dump($_controller, $_action, $_id, $pageController, $page);
 echo "</pre>";
