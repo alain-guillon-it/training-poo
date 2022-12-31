@@ -1,3 +1,6 @@
 <article>
-  <h1>Movie List</h1>
+  <h1>Movies Galleries</h1>
+  <section>
+    <?php dump($page->list()); ?>
+  </section>
 </article>

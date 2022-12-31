@@ -1,3 +1,6 @@
 <article>
-  <h1>Series List</h1>
+  <h1>Series Galleries</h1>
+  <section>
+    <?php dump($page->list()); ?>
+  </section>
 </article>

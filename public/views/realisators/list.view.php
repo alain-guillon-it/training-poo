@@ -1,3 +1,6 @@
 <article>
-  <h1>Realisators list</h1>
+  <h1>Realisators Galleries</h1>
+  <section>
+    <?php dump($page->list()); ?>
+  </section>
 </article>
