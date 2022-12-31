@@ -85,6 +85,13 @@ html {
 img {
   max-width: 100%;
 }
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--visited);
+}
 
 /**
  * ========================================================================================
