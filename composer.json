@@ -13,5 +13,7 @@
             "email": "a.guillon@it-students.fr"
         }
     ],
-    "require": {}
+    "require": {
+        "symfony/var-dumper": "^6.2"
+    }
 }
