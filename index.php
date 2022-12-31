@@ -37,7 +37,7 @@ $_controller = $_SERVER["REQUEST_URI"] == "/" ? "home" : "error";
  */
 if (isset($_GET["page"]) && !empty($_GET["page"])) {
   $getPage = trim(htmlspecialchars(strtolower($_GET["page"])));
-  $checkGetPageValid = ["home"];
+  $checkGetPageValid = ["home", "movies"];
   $_controller = in_array($getPage, $checkGetPageValid) ? $getPage : "error";
 }
 
