@@ -8,7 +8,7 @@ class ActorsController extends PageController implements MediaInterface
 {
   use MediaTrait;
 
-  protected string $_title = "Page Actors";
+  protected string $_title = "Actors";
 
   function list(): array
   {
