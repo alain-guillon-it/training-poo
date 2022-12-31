@@ -2,7 +2,7 @@
 
 namespace Zyrass\TrainingPoo\models;
 
-class SerieModel
+class SerieModel extends MediaModel
 {
   protected array $_datas = [
     [
