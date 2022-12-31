@@ -4,9 +4,18 @@
   <a href="/?page=movies&action=list">Show the complete list</a>
 
   <section>
-    <h2>The three last movies</h2>
+    <h2>Three last movies</h2>
     <div>
-      <?php dump($page->getLastThreeMovies()); ?>
+      <?php foreach ($page->getLastThreeMovies() as $movie) : ?>
+        <a href=<?= "/?page=movies&action=detail&id=" . $movie["id"]; ?>>
+          <figure>
+            <img src=<?= $movie["cover"]; ?> alt=<?= "The cover of " . $movie["title"] . " movie."; ?>>
+            <figcaption>
+              <?= $movie["title"]; ?>
+            </figcaption>
+          </figure>
+        </a>
+      <?php endforeach; ?>
     </div>
   </section>
 </article>

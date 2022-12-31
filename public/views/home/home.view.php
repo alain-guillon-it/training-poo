@@ -56,7 +56,7 @@
       <?php foreach ($page->getLastThreeRealisators() as $realisator) : ?>
         <a href=<?= "/?page=realisators&action=detail&id=" . $realisator["id"]; ?>>
           <figure>
-            <img src=<?= $realisator["photo"]; ?> alt=<?= "The photo of " . $actor["fullname"] . " realisator."; ?>>
+            <img src=<?= $realisator["photo"]; ?> alt=<?= "The photo of " . $realisator["fullname"] . " realisator."; ?>>
             <figcaption>
               <?= $realisator["fullname"]; ?>
             </figcaption>

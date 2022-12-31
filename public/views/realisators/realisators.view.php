@@ -4,9 +4,18 @@
   <a href="/?page=realisators&action=list">Show all realisators</a>
 
   <section>
-    <h2>The three last realisators</h2>
+    <h2>Three last realisators</h2>
     <div>
-      <?php dump($page->getLastThreeRealisators()); ?>
+      <?php foreach ($page->getLastThreeRealisators() as $realisator) : ?>
+        <a href=<?= "/?page=realisators&action=detail&id=" . $realisator["id"]; ?>>
+          <figure>
+            <img src=<?= $realisator["photo"]; ?> alt=<?= "The photo of " . $realisator["fullname"] . " realisator."; ?>>
+            <figcaption>
+              <?= $realisator["fullname"]; ?>
+            </figcaption>
+          </figure>
+        </a>
+      <?php endforeach; ?>
     </div>
   </section>
 </article>

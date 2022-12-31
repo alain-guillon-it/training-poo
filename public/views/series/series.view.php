@@ -4,9 +4,18 @@
   <a href="/?page=series&action=list">Show all series</a>
 
   <section>
-    <h2>The three last series</h2>
+    <h2>Three last series</h2>
     <div>
-      <?php dump($page->getLastThreeSeries()); ?>
+      <?php foreach ($page->getLastThreeSeries() as $serie) : ?>
+        <a href=<?= "/?page=series&action=detail&id=" . $serie["id"] ?>>
+          <figure>
+            <img src=<?= $serie["cover"]; ?> alt=<?= "The cover of " . $serie["title"] . " serie." ?>>
+            <figcaption>
+              <?= $serie["title"]; ?>
+            </figcaption>
+          </figure>
+        </a>
+      <?php endforeach; ?>
     </div>
   </section>
 </article>
