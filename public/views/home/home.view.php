@@ -16,6 +16,11 @@
         </a>
       <?php endforeach; ?>
     </div>
+    <a href="/?page=movies&action=list">
+      <footer>
+        Show all list
+      </footer>
+    </a>
   </section>
 
   <section>
@@ -32,6 +37,11 @@
         </a>
       <?php endforeach; ?>
     </div>
+    <a href="/?page=movies&action=list">
+      <footer>
+        Show all list
+      </footer>
+    </a>
   </section>
 
   <section>
@@ -48,6 +58,11 @@
         </a>
       <?php endforeach; ?>
     </div>
+    <a href="/?page=movies&action=list">
+      <footer>
+        Show all list
+      </footer>
+    </a>
   </section>
 
   <section>
@@ -64,6 +79,11 @@
         </a>
       <?php endforeach; ?>
     </div>
+    <a href="/?page=movies&action=list">
+      <footer>
+        Show all list
+      </footer>
+    </a>
   </section>
 
 </article>

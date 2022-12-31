@@ -1,5 +1,5 @@
 <article>
-  <h1>Series Galleries</h1>
+  <h1>Gallery</h1>
   <section>
     <?php dump($page->list()); ?>
   </section>

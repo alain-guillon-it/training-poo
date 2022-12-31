@@ -1,6 +1,6 @@
 <article>
-  <h1>Page Series</h1>
-  <p>I proposed a list of <?= count($page->list()); ?> series.</p>
+  <h1>Series</h1>
+  <p>I proposed a list of <strong><?= count($page->list()); ?></strong> series.</p>
   <a href="/?page=series&action=list">Show all series</a>
 
   <section>

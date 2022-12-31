@@ -1,7 +1,7 @@
 <article>
   <h1>Actors</h1>
   <p>I proposed a list of <strong><?= count($page->list()); ?></strong> actors.</p>
-  <a href="/?page=actors&action=list">Show the complete list</a>
+  <a href="/?page=actors&action=list">Show all actors</a>
 
   <section>
     <h2>Three last actors</h2>

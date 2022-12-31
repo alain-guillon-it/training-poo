@@ -1,6 +1,6 @@
 <article>
-  <h1>Page Realisators</h1>
-  <p>I proposed a list of <?= count($page->list()) ?> realisators.</p>
+  <h1>Realisators</h1>
+  <p>I proposed a list of <strong><?= count($page->list()) ?></strong> realisators.</p>
   <a href="/?page=realisators&action=list">Show all realisators</a>
 
   <section>
