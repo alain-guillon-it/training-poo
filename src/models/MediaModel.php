@@ -8,7 +8,7 @@ abstract class MediaModel
   {
     return $this->_datas;
   }
-  function getDataByID(int $indexArray): array
+  function getDataByID(string $indexArray): array
   {
     return $this->_datas[$indexArray];
   }
