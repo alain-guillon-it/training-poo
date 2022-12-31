@@ -2,6 +2,7 @@
 
 namespace Zyrass\TrainingPoo\controllers;
 
-class HomeController
+class HomeController extends PageController
 {
+  protected string $_title = "HomePage";
 }

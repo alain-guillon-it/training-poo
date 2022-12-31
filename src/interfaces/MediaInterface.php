@@ -1,6 +1,6 @@
 <?php
 
-namespace Zyrass\TrainingPoo\interface;
+namespace Zyrass\TrainingPoo\interfaces;
 
 interface MediaInterface
 {
