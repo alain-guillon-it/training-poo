@@ -112,9 +112,11 @@ main article section:nth-child(odd) h2 {
 
 main article section div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  column-gap: 50px;
-  row-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 25px;
+  row-gap: 25px;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 main article section div a {
@@ -128,6 +130,7 @@ main article section div figure {
   justify-content: center;
   flex-direction: column;
   border-radius: 8px;
+  max-width: 300px;
 }
 
 main article section div figure img {

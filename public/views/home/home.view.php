@@ -33,7 +33,7 @@
             <figcaption>
               <?= $serie["title"]; ?>
             </figcaption>
-          </figure>movies
+          </figure>
         </a>
       <?php endforeach; ?>
     </div>
