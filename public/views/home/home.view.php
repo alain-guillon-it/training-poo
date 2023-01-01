@@ -33,11 +33,11 @@
             <figcaption>
               <?= $serie["title"]; ?>
             </figcaption>
-          </figure>
+          </figure>movies
         </a>
       <?php endforeach; ?>
     </div>
-    <a href="/?page=movies&action=list">
+    <a href="/?page=series&action=list">
       <footer>
         Show all list
       </footer>
@@ -58,7 +58,7 @@
         </a>
       <?php endforeach; ?>
     </div>
-    <a href="/?page=movies&action=list">
+    <a href="/?page=actors&action=list">
       <footer>
         Show all list
       </footer>
@@ -66,20 +66,20 @@
   </section>
 
   <section>
-    <h2>Three last realisators</h2>
+    <h2>Three last directors</h2>
     <div>
-      <?php foreach ($page->getLastThreeRealisators() as $realisator) : ?>
-        <a href=<?= "/?page=realisators&action=detail&id=" . $realisator["id"]; ?>>
+      <?php foreach ($page->getLastThreeDirectors() as $directors) : ?>
+        <a href=<?= "/?page=directors&action=detail&id=" . $directors["id"]; ?>>
           <figure>
-            <img src=<?= $realisator["photo"]; ?> alt=<?= "The photo of " . $realisator["fullname"] . " realisator."; ?>>
+            <img src=<?= $directors["photo"]; ?> alt=<?= "The photo of " . $directors["fullname"] . " realisator."; ?>>
             <figcaption>
-              <?= $realisator["fullname"]; ?>
+              <?= $directors["fullname"]; ?>
             </figcaption>
           </figure>
         </a>
       <?php endforeach; ?>
     </div>
-    <a href="/?page=movies&action=list">
+    <a href="/?page=directors&action=list">
       <footer>
         Show all list
       </footer>

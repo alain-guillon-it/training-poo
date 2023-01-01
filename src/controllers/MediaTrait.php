@@ -4,7 +4,7 @@ namespace Zyrass\TrainingPoo\controllers;
 
 use Zyrass\TrainingPoo\models\ActorModel;
 use Zyrass\TrainingPoo\models\MovieModel;
-use Zyrass\TrainingPoo\models\RealisatorModel;
+use Zyrass\TrainingPoo\models\DirectorModel;
 use Zyrass\TrainingPoo\models\SerieModel;
 
 trait MediaTrait
@@ -13,7 +13,7 @@ trait MediaTrait
   private array $_lastThreeMovies = [];
   private array $_lastThreeSeries = [];
   private array $_lastThreeActors = [];
-  private array $_lastThreeRealisators = [];
+  private array $_lastThreeDirectors = [];
 
   function getMovies(): array
   {
@@ -33,9 +33,9 @@ trait MediaTrait
     return $model->getDatas();
   }
 
-  function getRealisators(): array
+  function getDirectors(): array
   {
-    $model = new RealisatorModel;
+    $model = new DirectorModel;
     return $model->getDatas();
   }
 
@@ -57,9 +57,9 @@ trait MediaTrait
     return array_slice($this->_lastThreeActors, 0, 3);
   }
 
-  function getLastThreeRealisators(): array
+  function getLastThreeDirectors(): array
   {
-    $this->_lastThreeRealisators = array_reverse($this->getRealisators());
-    return array_slice($this->_lastThreeRealisators, 0, 3);
+    $this->_lastThreeDirectors = array_reverse($this->getDirectors());
+    return array_slice($this->_lastThreeDirectors, 0, 3);
   }
 }

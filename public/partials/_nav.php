@@ -23,9 +23,9 @@
     <a href="/?page=actors">Actors</a>
   <?php endif; ?>
 
-  <?php if ($_SERVER["REQUEST_URI"] == "/?page=realisators" || $_SERVER["REQUEST_URI"] == "/?page=realisators&action=list" || $_SERVER["REQUEST_URI"] == "/?page=realisators&action=detail") : ?>
-    <a href="/?page=realisators" class="active">Réalisators</a>
+  <?php if ($_SERVER["REQUEST_URI"] == "/?page=directors" || $_SERVER["REQUEST_URI"] == "/?page=realisators&action=list" || $_SERVER["REQUEST_URI"] == "/?page=directors&action=detail") : ?>
+    <a href="/?page=directors" class="active">Directors</a>
   <?php else : ?>
-    <a href="/?page=realisators">Réalisators</a>
+    <a href="/?page=directors">Directors</a>
   <?php endif; ?>
 </nav>

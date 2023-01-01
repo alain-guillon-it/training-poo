@@ -4,16 +4,16 @@ namespace Zyrass\TrainingPoo\controllers;
 
 use Zyrass\TrainingPoo\interfaces\MediaInterface;
 
-class RealisatorsController extends PageController implements MediaInterface
+class DirectorsController extends PageController implements MediaInterface
 {
 
   use MediaTrait;
 
-  protected string $_title = "Realisators";
+  protected string $_title = "Directors";
 
   function list(): array
   {
-    return $this->getRealisators();
+    return $this->getDirectors();
   }
 
   function detail(string $indexArray)
