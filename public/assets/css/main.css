@@ -11,6 +11,77 @@
 
 /**
  * ========================================================================================
+ * MAIN
+ * ========================================================================================
+ */
+main {
+  background-color: var(--bg-secondary);
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE LIST H1
+ * ========================================================================================
+ */
+main article.article__list {
+  padding: 100px 50px;
+}
+main article.article__list h1 {
+  text-align: center;
+  color: var(--success);
+  font-size: calc(69px + 1vmin);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE LIST SECTION
+ * ========================================================================================
+ */
+main article.article__list section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 100px;
+  row-gap: 100px;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE LIST SECTION FIGURE
+ * ========================================================================================
+ */
+main article.article__list section figure {
+  width: 250px;
+  height: 350px;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE LIST SECTION FIGURE IMG
+ * ========================================================================================
+ */
+main article.article__list section figure img {
+  width: 100%;
+  height: 300px;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE LIST SECTION FIGURE FIGCAPTION
+ * ========================================================================================
+ */
+main article.article__list section figure figcaption {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-light);
+  color: var(--text-secondary);
+}
+
+/**
+ * ========================================================================================
  * MAIN ARTICLE PARTIE DETAIL
  * ========================================================================================
  */
@@ -27,7 +98,6 @@ main article.article__detail {
     "genre genre"
     "section_director section_director"
     "section_actors section_actors";
-  background-color: var(--bg-secondary);
 }
 /**
  * ========================================================================================
@@ -39,7 +109,7 @@ main article.article__detail h1 {
   color: var(--success);
   font-size: calc(69px + 1vmin);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 /**
@@ -54,7 +124,7 @@ main article.article__detail p {
   letter-spacing: 1.4px;
   text-align: center;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 /**

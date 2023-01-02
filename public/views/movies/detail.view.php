@@ -5,7 +5,7 @@ $actors = $page->getActors();
 // dump($movie, $director, $actors);
 ?>
 
-<article class="article__container article__detail">
+<article class="article__detail">
   <h1><?= $movie["title"]; ?></h1>
   <p>
     <?= $movie["synopsis"]; ?>
