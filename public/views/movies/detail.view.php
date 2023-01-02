@@ -5,55 +5,43 @@ $actors = $page->getActors();
 // dump($movie, $director, $actors);
 ?>
 
-<article class="article__container">
+<article class="article__container article__detail">
   <h1><?= $movie["title"]; ?></h1>
   <p>
     <?= $movie["synopsis"]; ?>
   </p>
-  <h2>
-    Information complémentaire
-  </h2>
+  <figure>
+    <img src=<?= $movie["cover"]; ?> alt="">
+  </figure>
   <div>
-    <span>Année: <?= $movie["year"]; ?></span>
     <span>Genre: [
       <?php foreach ($movie["genre"] as $genre) : ?>
         <?= $genre; ?>,
       <?php endforeach; ?>
       ]
     </span>
+    <span>Année: <?= $movie["year"]; ?></span>
   </div>
-  <div>
-    <section>
-      <h2>Cover</h2>
-      <div>
-        <figure>
-          <img src=<?= $movie["cover"]; ?> alt="">
-        </figure>
-      </div>
-    </section>
-    <section>
-      <h2>Director</h2>
-      <div>
-        <a href=<?= "/?page=directors&action=detail&id=" . $director["id"]; ?>>
+  <section class="article__detail--director">
+    <h2>Director</h2>
+    <a href=<?= "/?page=directors&action=detail&id=" . $director["id"]; ?>>
+      <figure>
+        <img src=<?= $director["photo"]; ?> alt=<?= $director["fullname"]; ?>>
+        <figcaption><?= $director["fullname"]; ?></figcaption>
+      </figure>
+    </a>
+  </section>
+  <section class="article__detail--actors">
+    <h2>Actors</h2>
+    <div>
+      <?php foreach ($movie["actors_ID"] as $movieActorsID) : ?>
+        <a href=<?= "/?page=actors&action=detail&id=" . $movieActorsID ?>>
           <figure>
-            <img src=<?= $director["photo"]; ?> alt=<?= $director["fullname"]; ?>>
-            <figcaption><?= $director["fullname"]; ?></figcaption>
+            <img src=<?= $actors[$movieActorsID]["photo"]; ?> alt="<?= $actors[$movieActorsID]["fullname"]; ?>">
+            <figcaption><?= $actors[$movieActorsID]["fullname"]; ?></figcaption>
           </figure>
         </a>
-      </div>
-    </section>
-    <section>
-      <h2>Actors</h2>
-      <div>
-        <?php foreach ($movie["actors_ID"] as $movieActorsID) : ?>
-          <a href=<?= "/?page=actors&action=detail&id=" . $movieActorsID ?>>
-            <figure>
-              <img src=<?= $actors[$movieActorsID]["photo"]; ?> alt="<?= $actors[$movieActorsID]["fullname"]; ?>">
-              <figcaption><?= $actors[$movieActorsID]["fullname"]; ?></figcaption>
-            </figure>
-          </a>
-        <?php endforeach; ?>
-      </div>
-    </section>
-  </div>
+      <?php endforeach; ?>
+    </div>
+  </section>
 </article>

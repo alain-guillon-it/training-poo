@@ -11,176 +11,211 @@
 
 /**
  * ========================================================================================
- * MAIN
+ * MAIN ARTICLE PARTIE DETAIL
  * ========================================================================================
  */
-main {
-  background-color: var(--bg-secondary);
-  color: var(--text-light);
-}
-
-/**
- * ========================================================================================
- * MAIN ARTICLE ERROR
- * ========================================================================================
- */
-main article.error {
-  height: 100%;
-  background-color: var(--bg-danger);
-  color: var(--text-danger);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-main article.error h1 {
-  font-size: calc(69px + 1vmin);
-  margin-bottom: 25px;
-}
-main article.error p {
-  text-align: center;
-  max-width: 400px;
-  font-size: calc(16px + 1vmin);
-  letter-spacing: 1.6px;
-}
-
-/**
- * ========================================================================================
- * MAIN ARTICLE H1
- * ========================================================================================
- */
-main article h1 {
-  padding: 100px 0 25px;
-  text-align: center;
-  font-size: calc(32px + 4vmin);
-  text-transform: uppercase;
-}
-
-/**
- * ========================================================================================
- * MAIN ARTICLE P
- * ========================================================================================
- */
-main article > p {
-  padding: 0 50px 100px;
-  text-align: center;
-  font-size: calc(16px + 1vmin);
-}
-
-/**
- * ========================================================================================
- * MAIN ARTICLE A
- * ========================================================================================
- */
-main article > a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  border: 2px solid var(--link);
-  border-radius: 8px;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: background-color 0.4s, color 0.4s;
-  width: 300px;
-  margin: 0 auto 25px;
-}
-main article > a:hover {
-  border: 2px solid var(--light);
-  background-color: var(--bg-secondary-2);
-  color: var(--bg-secondary);
-}
-
-/**
- * ========================================================================================
- * MAIN ARTICLE SECTION
- * ========================================================================================
- */
-main article section {
-  padding: 100px 50px;
-}
-main article section h2 {
-  font-size: calc(32px + 1vmin);
-  padding-bottom: 50px;
-  text-align: center;
-}
-main article section:nth-child(odd) {
-  background-color: var(--bg-light);
-}
-main article section:nth-child(odd) h2 {
-  color: var(--text-secondary);
-}
-
-main article section div {
+main article.article__detail {
+  padding: 100px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  column-gap: 25px;
-  row-gap: 25px;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-main article section div a {
-  height: 550px;
-}
-
-main article section div figure {
-  height: 550px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 8px;
-  max-width: 300px;
-}
-
-main article section div figure img {
-  height: 450px;
-  width: 100%;
-  filter: grayscale(100%);
-  transition: filter 0.4s;
-}
-main article section div a figure:hover img {
-  filter: grayscale(0%);
-}
-main article section div figure figcaption {
-  height: 100px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-main article section:nth-child(odd) div figure {
-  border: 12px solid var(--bg-secondary);
-}
-main article section:nth-child(odd) div figure figcaption {
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 150px 250px 50px 500px 1fr;
+  column-gap: 100px;
+  row-gap: 50px;
+  grid-template-areas:
+    "image titleH1"
+    "image synopsis"
+    "genre genre"
+    "section_director section_director"
+    "section_actors section_actors";
   background-color: var(--bg-secondary);
 }
-main article section:nth-child(even) div figure {
-  border: 12px solid var(--bg-light);
-}
-main article section:nth-child(even) div figure figcaption {
-  background-color: var(--bg-light);
-  color: var(--text-secondary);
-}
-
-main article section footer {
-  background-color: var(--bg-info);
-  height: 54px;
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE DETAIL H1
+ * ========================================================================================
+ */
+main article.article__detail h1 {
+  grid-area: titleH1;
+  color: var(--success);
+  font-size: calc(69px + 1vmin);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px 0 0;
-  border-radius: 8px;
-  text-transform: uppercase;
-  color: var(--text-info);
-  font-weight: 700;
-  border: 4px solid var(--info-2);
 }
-
-main article section footer:hover {
-  background-color: var(--bg-secondary-2);
-  color: var(--text-info);
-  border: 4px solid var(--info-2);
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE DETAIL P
+ * ========================================================================================
+ */
+main article.article__detail p {
+  grid-area: synopsis;
+  color: var(--text-light);
+  font-size: calc(14px + 1vmin);
+  letter-spacing: 1.4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE DETAIL FIGURE
+ * ========================================================================================
+ */
+main article.article__detail figure {
+  grid-area: image;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid var(--bg-light);
+}
+main article.article__detail figure img {
+  height: 100%;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE DETAIL DIV (GENRE)
+ * ========================================================================================
+ */
+main article.article__detail div {
+  grid-area: genre;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--text-light);
+  font-size: calc(14px + 1vmin);
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE DETAIL DIRECTOR
+ * ========================================================================================
+ */
+main article.article__detail section.article__detail--director {
+  grid-area: section_director;
+  background-color: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 0;
+  box-shadow: inset 0 0 150px var(--bg-black);
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE DETAIL DIRECTOR H2
+ * ========================================================================================
+ */
+main article.article__detail section.article__detail--director h2 {
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-size: calc(32px + 1vmin);
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE DETAIL DIRECTOR FIGURE
+ * ========================================================================================
+ */
+main article.article__detail section.article__detail--director figure {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 4px solid var(--bg-secondary);
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE DETAIL DIRECTOR FIGURE IMG
+ * ========================================================================================
+ */
+main article.article__detail section.article__detail--director figure img {
+  height: 250px;
+  width: 100%;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE DETAIL DIRECTOR FIGURE FIGCAPTION
+ * ========================================================================================
+ */
+main
+  article.article__detail
+  section.article__detail--director
+  figure
+  figcaption {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-light);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE DETAIL ACTORS
+ * ========================================================================================
+ */
+main article.article__detail section.article__detail--actors {
+  grid-area: section_actors;
+  padding: 50px;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE DETAIL ACTORS H2
+ * ========================================================================================
+ */
+main article.article__detail section.article__detail--actors h2 {
+  color: var(--text-light);
+  text-transform: uppercase;
+  font-size: calc(32px + 1vmin);
+  text-align: center;
+  margin-bottom: 50px;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE DETAIL ACTORS DIV (GALLERY)
+ * ========================================================================================
+ */
+main article.article__detail section.article__detail--actors div {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  column-gap: 50px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE DETAIL ACTORS FIGURE
+ * ========================================================================================
+ */
+main article.article__detail section.article__detail--actors figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 300px;
+  border: 4px solid var(--bg-light);
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE DETAIL ACTORS FIGURE IMG
+ * ========================================================================================
+ */
+main article.article__detail section.article__detail--actors figure img {
+  height: 250px;
+  width: 100%;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE PARTIE DETAIL ACTORS FIGURE FIGCAPTION
+ * ========================================================================================
+ */
+main article.article__detail section.article__detail--actors figure figcaption {
+  height: 50px;
+  background-color: var(--bg-light);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
 }
