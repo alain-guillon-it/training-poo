@@ -17,6 +17,6 @@ class MoviesController extends PageController implements MediaInterface
 
   function detail(string $indiceArray): array
   {
-    return $this->_datas[$indiceArray];
+    return $this->getMovies()[$indiceArray];
   }
 }
