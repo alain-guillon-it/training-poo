@@ -25,6 +25,12 @@ main {
 main article.article__container {
   padding: 100px;
 }
+
+@media (max-width: 576px) {
+  main article.article__container {
+    padding: 100px 25px;
+  }
+}
 /**
  * ========================================================================================
  * MAIN ARTICLE CONTAINER H1
