@@ -92,6 +92,7 @@ main article.article__container section:nth-child(even) {
 }
 main article.article__container section:nth-child(odd) {
   background-color: var(--bg-light);
+  box-shadow: inset 0 0 150px var(--bg-black);
 }
 
 /**
@@ -158,6 +159,13 @@ main article.article__container section figure figcaption {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 700;
+}
+main article.article__container section:nth-child(odd) figure figcaption {
+  background-color: var(--bg-secondary);
+  color: var(--text-light);
+}
+main article.article__container section:nth-child(even) figure figcaption {
   background-color: var(--bg-light);
   color: var(--text-secondary);
 }
