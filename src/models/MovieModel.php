@@ -33,7 +33,7 @@ class MovieModel extends MediaModel
     ],
     [
       "id" => 2,
-      "cover" => "https://www.petit-bulletin.fr/multimedia/agenda/2019-09-11-17-19-37_352235affichedufilmmisery953x01.jpg",
+      "cover" => "https://m.media-amazon.com/images/M/MV5BNzY0ODQ3MTMxN15BMl5BanBnXkFtZTgwMDkwNTg4NjE@._V1_.jpg",
       'title' => "Misery",
       'year' => 1991,
       'synopsis' => "Paul Sheldon, romancier et créateur du personnage de Misery dont il a écrit la saga est satisfait. Il vient enfin de faire mourir son héroïne et peut passer à autre chose. Il quitte l'hôtel de montagne où il a l'habitude d'écrire et prend la route de New York. Pris dans un violent blizzard, sa voiture dérape dans la neige et tombe dans un ravin. Paul Sheldon doit son salut à Annie Wilkes, infirmière retraitée qui vit dans un chalet isolé. Annie est justement une supporter inconditionnelle de la belle Misery.",

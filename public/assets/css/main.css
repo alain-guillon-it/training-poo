@@ -19,6 +19,131 @@ main {
 }
 /**
  * ========================================================================================
+ * MAIN ARTICLE CONTAINER
+ * ========================================================================================
+ */
+main article.article__container {
+  padding: 100px;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE CONTAINER H1
+ * ========================================================================================
+ */
+main article.article__container h1 {
+  font-size: calc(48px + 1vmin);
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: 50px;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE CONTAINER P
+ * ========================================================================================
+ */
+main article.article__container p {
+  font-size: calc(16px + 1vmin);
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: 50px;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE CONTAINER A
+ * ========================================================================================
+ */
+main article.article__container > a {
+  display: block;
+  text-align: center;
+  margin: 0 auto 100px;
+  width: 300px;
+  border: 2px solid var(--link);
+  color: var(--text-light);
+  border-radius: 8px;
+  padding: 8px;
+  font-size: calc(14px + 1vmin);
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: background-color 0.4s, color 0.4s;
+}
+main article.article__container > a:visited {
+  border: 2px solid var(--visited);
+  font-style: italic;
+}
+main article.article__container > a:hover {
+  border: 2px solid var(--success);
+  background-color: var(--bg-success);
+  color: var(--text-success);
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE CONTAINER SECTION
+ * ========================================================================================
+ */
+main article.article__container section {
+  background-color: var(--bg-light);
+  padding: 50px 0 100px;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE CONTAINER SECTION H2
+ * ========================================================================================
+ */
+main article.article__container section h2 {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 50px;
+  font-size: calc(32px + 1vmin);
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE CONTAINER SECTION DIV
+ * ========================================================================================
+ */
+main article.article__container section div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 100px;
+  row-gap: 100px;
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE CONTAINER SECTION DIV FIGURE
+ * ========================================================================================
+ */
+main article.article__container section div figure {
+  width: 250px;
+  height: 350px;
+  border: 4px solid var(--bg-secondary);
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE CONTAINER SECTION DIV FIGURE IMG
+ * ========================================================================================
+ */
+main article.article__container section div figure img {
+  width: 100%;
+  height: calc(350px - 50px);
+}
+/**
+ * ========================================================================================
+ * MAIN ARTICLE CONTAINER SECTION DIV FIGURE FIGCAPTION
+ * ========================================================================================
+ */
+main article.article__container section figure figcaption {
+  width: 100%;
+  height: calc(50px - 8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-light);
+  color: var(--text-secondary);
+}
+
+/**
+ * ========================================================================================
  * MAIN ARTICLE PARTIE LIST H1
  * ========================================================================================
  */
@@ -49,12 +174,22 @@ main article.article__list section {
 }
 /**
  * ========================================================================================
+ * MAIN ARTICLE PARTIE LIST SECTION A
+ * ========================================================================================
+ */
+main article.article__list section a {
+  width: 250px;
+  height: 350px;
+}
+/**
+ * ========================================================================================
  * MAIN ARTICLE PARTIE LIST SECTION FIGURE
  * ========================================================================================
  */
 main article.article__list section figure {
   width: 250px;
   height: 350px;
+  border: 4px solid var(--bg-light);
 }
 /**
  * ========================================================================================
@@ -63,7 +198,7 @@ main article.article__list section figure {
  */
 main article.article__list section figure img {
   width: 100%;
-  height: 300px;
+  height: calc(350px - 50px);
 }
 /**
  * ========================================================================================
@@ -72,7 +207,7 @@ main article.article__list section figure img {
  */
 main article.article__list section figure figcaption {
   width: 100%;
-  height: 50px;
+  height: calc(50px - 8px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,8 +241,8 @@ main article.article__detail {
  */
 main article.article__detail h1 {
   grid-area: titleH1;
-  color: var(--success);
-  font-size: calc(69px + 1vmin);
+  color: var(--text-light);
+  font-size: calc(48px + 1vmin);
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -139,6 +274,7 @@ main article.article__detail figure {
   align-items: center;
   justify-content: center;
   border: 4px solid var(--bg-light);
+  border-radius: 4px 4px 0 0;
 }
 main article.article__detail figure img {
   height: 100%;
