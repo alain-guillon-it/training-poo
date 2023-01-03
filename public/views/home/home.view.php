@@ -1,4 +1,4 @@
-<article class="home__container">
+<article class="article__container">
   <h1>OOP Project</h1>
   <p>Welcome to this website. It's writing with php and i used the oop concept.</p>
 
@@ -17,9 +17,7 @@
       <?php endforeach; ?>
     </div>
     <a href="/?page=movies&action=list">
-      <footer>
-        Show all list
-      </footer>
+      Show all list
     </a>
   </section>
 
@@ -38,9 +36,7 @@
       <?php endforeach; ?>
     </div>
     <a href="/?page=series&action=list">
-      <footer>
-        Show all list
-      </footer>
+      Show all list
     </a>
   </section>
 
@@ -59,9 +55,7 @@
       <?php endforeach; ?>
     </div>
     <a href="/?page=actors&action=list">
-      <footer>
-        Show all list
-      </footer>
+      Show all list
     </a>
   </section>
 
@@ -80,9 +74,7 @@
       <?php endforeach; ?>
     </div>
     <a href="/?page=directors&action=list">
-      <footer>
-        Show all list
-      </footer>
+      Show all list
     </a>
   </section>
 
