@@ -78,9 +78,13 @@ if (isset($_GET["action"]) && !empty($_GET["action"])) {
  * ========================================================================
  */
 if (isset($_GET["id"]) && !empty($_GET["id"])) {
-  $getID = trim($_GET["id"]);
-  $checkGetIDValid = [is_numeric($_GET["id"])];
-  $_id = in_array($getID, $checkGetIDValid) ? $getID : "error";
+  if (is_numeric($_GET["id"])) {
+    $getID = trim($_GET["id"]);
+    $checkGetIDValid = [is_numeric($_GET["id"])];
+    $_id = in_array($getID, $checkGetIDValid) ? $getID : "error";
+  } else {
+    $_id = "error";
+  }
 }
 
 /**
