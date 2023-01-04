@@ -5,6 +5,7 @@
  * IF DOES'NT ERROR SHOW
  * ========================================================================
  */
+error_reporting(E_ALL);
 ini_set("display_errors", "1");
 
 /**
@@ -28,7 +29,26 @@ $_id = null;
  * IF DOES'NT URL PARAMETER EXIST
  * ========================================================================
  */
-$_controller = $_SERVER["REQUEST_URI"] == "/" ? "home" : "error";
+switch ($_SERVER["REQUEST_URI"]) {
+  case "/":
+    $_controller = "home";
+    break;
+  case "/movies":
+    $_controller = "movies";
+    break;
+  case "/series":
+    $_controller = "series";
+    break;
+  case "/actors":
+    $_controller = "actors";
+    break;
+  case "/directors":
+    $_controller = "directors";
+    break;
+  default:
+    $_controller = "error";
+    break;
+}
 
 /**
  * ========================================================================
