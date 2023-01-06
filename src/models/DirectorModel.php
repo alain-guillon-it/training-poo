@@ -4,6 +4,11 @@ namespace Zyrass\TrainingPoo\models;
 
 class DirectorModel extends MediaModel
 {
+  /**
+   * The datalist of Directors
+   *
+   * @var array
+   */
   protected array $_datas = [
     [
       "id" => 0,

@@ -4,6 +4,11 @@ namespace Zyrass\TrainingPoo\models;
 
 class SerieModel extends MediaModel
 {
+  /**
+   * The datalist of Series
+   *
+   * @var array
+   */
   protected array $_datas = [
     [
       "id" => 0,

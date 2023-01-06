@@ -8,6 +8,11 @@ class MoviesController extends PageController implements MediaInterface
 {
   use MediaTrait;
 
+  /**
+   * Define the attribute title
+   *
+   * @var string
+   */
   protected string $_title = "Movie";
 
   function list(): array

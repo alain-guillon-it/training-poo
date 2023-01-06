@@ -4,6 +4,18 @@ namespace Zyrass\TrainingPoo\interfaces;
 
 interface MediaInterface
 {
-  public function list();
-  public function detail(string $indexArray);
+  /**
+   * Return a full datalist
+   *
+   * @return array
+   */
+  public function list(): array;
+
+  /**
+   * Return an ID from the list
+   *
+   * @param string $indexArray
+   * @return array
+   */
+  public function detail(string $indexArray): array;
 }

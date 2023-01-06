@@ -16,8 +16,8 @@ class DirectorsController extends PageController implements MediaInterface
     return $this->getDirectors();
   }
 
-  function detail(string $indexArray)
+  function detail(string $indexArray): array
   {
-    return $this->_datas[$indexArray];
+    return $this->getDirectors()[$indexArray];
   }
 }

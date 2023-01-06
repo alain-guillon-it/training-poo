@@ -4,6 +4,11 @@ namespace Zyrass\TrainingPoo\models;
 
 class MovieModel extends MediaModel
 {
+  /**
+   * The datalist of Movies
+   *
+   * @var array
+   */
   protected array $_datas = [
     [
       "id" => 0,

@@ -8,6 +8,11 @@ class SeriesController extends PageController implements MediaInterface
 {
   use MediaTrait;
 
+  /**
+   * Define the attribute title
+   *
+   * @var string
+   */
   protected string $_title = "Series";
 
   function list(): array
@@ -15,8 +20,8 @@ class SeriesController extends PageController implements MediaInterface
     return $this->getSeries();
   }
 
-  function detail(string $indexArray)
+  function detail(string $indexArray): array
   {
-    return $this->_datas[$indexArray];
+    return $this->getSeries()[$indexArray];
   }
 }

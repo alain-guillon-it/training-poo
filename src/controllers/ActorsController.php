@@ -17,6 +17,6 @@ class ActorsController extends PageController implements MediaInterface
 
   function detail(string $indiceArray): array
   {
-    return $this->_datas[$indiceArray];
+    return $this->getActors()[$indiceArray];
   }
 }
