@@ -1,4 +1,4 @@
-<article>
+<article class="article__container">
   <h1>Actors</h1>
   <p>I propose a list of <strong><?= count($page->list()); ?></strong> actors.</p>
   <a href="/?page=actors&action=list">Show all actors</a>

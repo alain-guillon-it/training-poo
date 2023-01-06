@@ -1,4 +1,4 @@
-<article>
+<article class="article__container">
   <h1>directors</h1>
   <p>I propose a list of <strong><?= count($page->list()) ?></strong> directors.</p>
   <a href="/?page=directors&action=list">Show all directors</a>
